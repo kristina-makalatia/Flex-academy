@@ -1,9 +1,29 @@
+ prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /*Base classes*/
 .container {
-	width: 1170px;
+	max-width: 1170px;
+	width:100%;
 	margin:0 auto;
 }
+.bg-gradient {
+	width: 500px;
+	height: 300px;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d9c89f+0,bea766+100 */
+	background: #d9c89f; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #d9c89f 0%, #bea766 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #d9c89f 0%,#bea766 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #d9c89f 0%,#bea766 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9c89f', endColorstr='#bea766',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+}
+.bg-gradient2 {
+	width: 500px;
+	height: 300px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(blue), color-stop(yellow), to(pink));
+	background-image: -o-linear-gradient(blue, yellow, pink);
+	background-image: linear-gradient(blue, yellow, pink);
+}
 /*Blue-section*/
 .blue-bg{
 	background-color: blue;
@@ -11,20 +31,34 @@
 }
 .video-wraper {
 	background-color: #fff;
-	width:570px;
+	max-width:570px;
+	width: 100%;
 	height: 320px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .video-wraper iframe {
     width: 100%;
     height: 100%;
 } 
 .video-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
+}
+.video-text {
+	font-size: 48px;
 }
 
 /*Grey-bg*/
@@ -46,8 +80,12 @@
 	width: 100%;
 }
 .image-wraper {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 /*.img-box {
 	margin-right: 30px;
@@ -62,25 +100,39 @@
 	padding: 30px 0;
 }
 .featured-wraper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .box-wraper {
-	width: 570px;
+	max-width: 570px;
+	width: 100%;
 	background-color: #F2F2F2;
 	padding: 13px;
 }
 .mshobeli {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-top:15px;
 }
 .mshobeli p {
-	width: 355px;
+	max-width: 355px;
+	width: 100%;
 }
 .read {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 .box-wraper {
 	position: relative;
@@ -98,6 +150,8 @@
 .social-fb {
 	font-size: 30px;
 	color: yellow;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 	transition: all 0.3s linear;
 }
 .social-fb:hover {
@@ -106,20 +160,50 @@
 .social-ins {
 	font-size: 30px;
 	color: pink;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 	transition: all 0.3s linear;
 }
 .social-ins:hover {
 	color: black;
 }
 .social-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .icon-logo1:before {
    color: red;
    font-size: 30px;
+   -webkit-transition: all 0.3s linear;
+   -o-transition: all 0.3s linear;
    transition: all 0.3s linear;
 }
 .social-icons:hover .icon-logo1:before {
 	color: yellow;
 }
+
+
+/*form*/
+.form-wraper {
+ 	max-width:600px;
+ 	width:100%;
+ 	margin: 0 auto;
+}
+/*input {
+	width: 100%;
+}*/
+/*.form-group {
+	display: flex;
+	flex-direction: column;
+}*/
+input[type=text] {
+	width: 100%;
+}
+input[type=password] {
+	width: 100%;
+}
+/*Responsive
