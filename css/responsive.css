@@ -47,4 +47,11 @@
 	.read {
 		justify-content: flex-start;
 	}
+	.burger-icon {
+		display:block;
+	}
+	.nav-li:not(.active) {
+		display: none;
+	}
+
 }

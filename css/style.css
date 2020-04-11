@@ -6,8 +6,36 @@
 	width:100%;
 	margin:0 auto;
 }
+/*Header*/
+.nav-ul {
+	display: flex;
+}
+.nav-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+li {
+	margin-right: 30px;
+}
+.nav-a {
+	color:red;
+	font-size: 24px;
+}
+.right-block {
+	display: flex;
+	align-items: center;
+}
+.burger-icon {
+	display:none;
+}
+.logo img {
+	height: 80px;
+}
 .bg-gradient {
-	width: 500px;
+	max-width: 500px;
+	display: inline-block;
+	width:100%;
 	height: 300px;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d9c89f+0,bea766+100 */
 	background: #d9c89f; /* Old browsers */
@@ -18,11 +46,17 @@
 
 }
 .bg-gradient2 {
-	width: 500px;
+	display: inline-block;
+	max-width: 500px;
+	width: 100%;
 	height: 300px;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(blue), color-stop(yellow), to(pink));
 	background-image: -o-linear-gradient(blue, yellow, pink);
 	background-image: linear-gradient(blue, yellow, pink);
+}
+.picture-image {
+	max-width: 500px;
+	width: 100%;
 }
 /*Blue-section*/
 .blue-bg{
@@ -200,10 +234,60 @@
 	display: flex;
 	flex-direction: column;
 }*/
-input[type=text] {
+/*input[type=text] {
 	width: 100%;
 }
 input[type=password] {
 	width: 100%;
+}*/
+.input-wraper {
+	width: 100%;
+	margin-top: 7px;
+	border:none;
+	border-bottom: 2px dashed red;
+	color: pink;
+	font-size: 22px;
 }
-/*Responsive
+.input-wraper::placeholder {
+	color: aqua;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.textarea-wraper::placeholder {
+	color: aqua;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.textarea-wraper {
+	width: 100%;
+	height: 100px;
+	resize: none;
+	margin-top: 7px;
+}
+.form-group {
+	margin-bottom: 15px;
+}
+.input-wraper:focus {
+	outline: none;
+}
+.textarea-wraper:focus {
+	outline: none;
+}
+/*/*Bg-image*/
+.bg-image {
+	background-image: url('https://www.w3schools.com/w3images/photographer.jpg');
+	height: 600px;
+	max-width: 1170px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom left;
+	position: relative;
+	background-color: red;
+	background-blend-mode: darken;
+}
+.p-absolute{
+	position: absolute;
+	top:100px;
+	color: #fff;
+}
